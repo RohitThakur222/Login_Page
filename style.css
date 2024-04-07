@@ -1,0 +1,226 @@
+main{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'urbanist',sans-serif;
+    overflow: hidden;
+
+}
+:root{
+    --var-primary-color:#2888E8ff;
+}
+html{
+    font-size: 62.5%;
+}
+h1 h2 h3 h4  {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+h1{
+    font-size:4.8rem;
+}
+h2{
+    font-size: 3rem;
+}
+p{
+    font: size 1.6rem;
+    letter-spacing: 0.05rem;
+}
+button, input[type="submit"]{
+    border: .1rem solid #fff;
+    outline: none;
+    padding: 0.6rem 0.8rem;
+    font-size: 1.7rem;
+    text-transform: capitalize;
+    letter-spacing: 0.05rem;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+/*home page style */
+.registeration-header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("image/main.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.hero-section{
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.hero-section p{
+    text-transform: uppercase;
+    margin: 1.3rem;
+    font-size: 1.3rem;
+    letter-spacing: .2rem;
+}
+.hero-section button{
+    margin-top: 2rem;
+    background-color: var(--var-primary-color);
+    border: none;
+    padding: 1rem 2rem;
+}
+.container{
+    height: 10vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+.logo a{
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+
+
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+
+
+}
+li>a{
+    color: #fff;
+    text-decoration: none;
+}
+/*registration*/
+main{
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-two--column{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+
+}
+.Registeration,.login{
+    min-height: 30rem;
+    min-width: 40vw;
+    background-color: rgb(169, 169, 44)
+}
+.form-text{
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("image/main.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 3rem 2rem;
+
+
+}
+.form-text p{
+    width: 30ch;
+    text-align: center;
+    margin: 2rem 0 3rem 0;
+}
+.form-text button{
+    background-color: #ccc;
+    color: #000;
+    border-radius: 50px;
+}
+.form-text button:hover{
+    background-color: transparent;
+    color: #fff;
+    border-radius: 50px;
+}
+.regstraion-form,.login-form{
+    width: 100%;
+    min-height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.regstraion-form p,.login form p{
+    margin: 1rem 0.7rem 0;
+}
+.social-icons{
+    text-align: center;
+    border: 50%;
+}
+.social-icons{
+    display: flex;
+    gap: 1.2rem;
+    margin: 1.5rem 0 .4rem 0;
+}
+.fa-brands{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 0.1rem solid #ccc;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+    width: 20rem;
+    margin: .7rem 0;
+    border: none;
+    background-color: #e8e8e8;
+    padding: 1rem 1.8rem;
+    letter-spacing: 0.6rem;
+}
+input[type="submit"]{
+    letter-spacing: .6rem;
+    margin-top: 1rem;
+    min-width: 10rem;
+    background-color: var(--var primary-color);
+    color: #fff;
+}
+.Registeration:not(.login-section--display)
+{
+    display: none;
+}
+.login-section--display .Registeration{
+    display: block;
+
+}
+.login-section--display .login{
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    .grid-two--column {
+        display: block;
+    }
+    .form-text,
+    .login-form {
+        width: 100%;
+    }
+    nav {
+        text-align: center; /* Center align the navigation items */
+    }
+    ul {
+        padding: 0; /* Remove default padding */
+    }
+    .link {
+        display: block; /* Make each list item occupy the full width */
+        margin-bottom: 10px; /* Add some spacing between items */
+    }
+    nav {
+        text-align: center; /* Center align the navigation items */
+    }
+}
+    
